@@ -1,0 +1,1 @@
+snp_name	pheno	Trait	Sample Size	pval_rep	OR_rep	Gene_rep	maf_common	cmb_odds_ratio	cmn_p_val	rare_snps	rare_snps_mafs	rare_snps_pvals	rare_snps_ors	A_cmb

@@ -1,0 +1,2 @@
+SNP_name	Phenotype	Chr	Disease_Trait	Sample Size	p-val_rep	OR_rep	MAF_rep	Gene_rep	OR_combined	p-val_combined	MAF_combined	P_12_max	SNPS_rare	MAFs_rare_snps	p-vals_rare_snps	ORs_rare_snps	A_cmb
+rs2290400	pheno_250.1	17	Type 1 diabetes	7,514 cases, 9,045 controls	6E-13	1.15	0.5	ORMDL3	0.799904576588	0.0180962234544	0.0377860026918	0.0525655591029	exm1317558	0.0377860026918	0.799904576588	0.0406584926511	[[19909, 1598, 25], [1386, 87, 2]]

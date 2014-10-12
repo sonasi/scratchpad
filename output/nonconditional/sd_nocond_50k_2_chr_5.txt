@@ -1,0 +1,5 @@
+snp_name	pheno	Chr	Trait	Sample Size	pval_rep	OR_rep	Gene_rep	maf_common	cmb_odds_ratio	cmn_p_val	rare_snps	rare_snps_mafs	rare_snps_pvals	rare_snps_ors	A_cmb
+rs13361189	pheno_555.1	5	Crohn's disease	1,748 cases,2,938 controls	2E-10	1.38	IRGM	0.08	3.74558615819	0.00670695582036	exm2275830	0.00164872139973	3.74558615819	0.0137204029993	[[21183, 64, 0], [440, 5, 0]]
+rs2853677	pheno_165.1	5	Lung adenocarcinoma	1,695 Japanese ancestry cases, 5,333 Japanese ancestry controls	3E-40	1.41	TERT	0.3	6.59451421018	0.000852293171965	exm442026	0.000370096225019	6.59451421018	0.0020473461369	[[27937, 17], [1246, 5]]
+rs2736100	pheno_165.1	5	Lung adenocarcinoma	1,004 Japanese cases, 1,900 Japanese controls	3E-11	1.27	TERT	0.39	6.59451421018	0.000852293171965	exm442026	0.000370096225019	6.59451421018	0.0020473461369	[[27937, 17], [1246, 5]]
+rs2546890	pheno_696.4	5	Psoriasis	472 German cases, 1,146 German controls	1E-20	1.54	IL12B	0.56	0.58100998057	0.0155673545081	exm500154	0.0305497611197	0.58100998057	0.0444157826067	[[22397, 1428, 13], [376, 14, 0]]

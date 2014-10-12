@@ -1,0 +1,2 @@
+SNP_name	Phenotype	Chr	Disease_Trait	Sample Size	p-val_rep	OR_rep	MAF_rep	Gene_rep	OR_combined	p-val_combined	MAF_combined	P_12_max	SNPS_rare	MAFs_rare_snps	p-vals_rare_snps	ORs_rare_snps	A_cmb
+rs2841277	pheno_714.1	14	Rheumatoid arthritis	4,074 Japanese ancestry cases, 16,891 Japanese ancestry controls	2E-14	1.15	0.69	PLD4	0.498605021921	0.0117298713712	0.00768842530283	-0.0176340423466	exm2251669	0.00768842530283	0.498605021921	0.0352072426496	[[23908, 386], [1118, 9]]

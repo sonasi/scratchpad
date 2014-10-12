@@ -1,0 +1,3 @@
+snp_name	pheno	Chr	Trait	Sample Size	pval_rep	OR_rep	Gene_rep	maf_common	cmb_odds_ratio	cmn_p_val	rare_snps	rare_snps_mafs	rare_snps_pvals	rare_snps_ors	A_cmb
+rs613872	pheno_364.51	18	Fuchs's corneal dystrophy	130 European descent cases, 260 European descent controls	1E-18	5.47	TCF4	0.15	3.18890727681	0.00170406461696	exm-rs17512836	0.0257738896366	3.18890727681	0.00321413567273	[[25138, 1323, 19], [50, 7, 1]]
+rs1893217	pheno_557.1	18	Celiac disease	4,533 European descent cases, 10,750 European descent controls	3E-10	1.17	PTPN2	0.17	31.0497076023	0.00524357939828	exm1376399	0.00021870058208	31.0497076023	0.0355357858816	[[21238, 9], [76, 1]]

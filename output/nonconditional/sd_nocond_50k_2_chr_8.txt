@@ -1,0 +1,2 @@
+snp_name	pheno	Chr	Trait	Sample Size	pval_rep	OR_rep	Gene_rep	maf_common	cmb_odds_ratio	cmn_p_val	rare_snps	rare_snps_mafs	rare_snps_pvals	rare_snps_ors	A_cmb
+rs6983561	pheno_185	8	Prostate cancer	1,033 Japanese ancestry cases, 1,042 Japanese ancestry controls, 1,043 Hispanic/Latin American ancestry cases, 1,057 Hispanic/Latin American ancestry controls	4E-13	1.87	NR	0.18	1.6969685119	7.83284367715e-10	exm-rs16901979	0.0359029577038	1.6969685119	1.54385626631e-09	[[8989, 683, 10], [1415, 189, 2]]

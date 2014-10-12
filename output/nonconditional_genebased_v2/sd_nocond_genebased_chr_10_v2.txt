@@ -1,0 +1,2 @@
+SNP_name	Phenotype	Chr	Disease_Trait	Sample Size	p-val_rep	OR_rep	MAF_rep	Gene_rep	OR_combined	p-val_combined	MAF_combined	P_12_max	SNPS_rare	MAFs_rare_snps	p-vals_rare_snps	ORs_rare_snps	A_cmb
+rs1913517	pheno_695.42	10	Systemic lupus erythematosus	1,047 Chinese Han cases, 1,205 Chinese Han controls	7E-12	1.24	0.29	LRRC18, WDFY4	1.66272658965	0.00621154569207	0.0205431051888	0.0949876730571	exm823479,exm823531	0.00228786757284,0.0205262803688	2.67495133519,1.66441183902	0.0448391264783,0.0109011762419	[[23922, 992, 8], [408, 29, 0]]

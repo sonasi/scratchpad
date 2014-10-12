@@ -1,0 +1,2 @@
+SNP	Reported_Gene	Chr	Lab_name	Study	Trait	p-value_reported (Catalog)	beta_reported (Catalog)	MAF_reported (catalog)	beta_common (Exome)	p-value_common (Exome)	MAF_common (exome)	beta_combined	p-value_combined	MAF_combined	SNPs_name	SNPs_MAF	SNPS_beta	SNPS_p-val
+rs364585	SPTLC3	20	LDL-C	Discovery and refinement of loci associated with lipid levels.	LDL cholesterol	4E-10	0.03	0.38	-0.58745344189	0.125566338834	0.3935	-0.185344107686	0.850031634202	0.000168231216985	exm1525700	0.000168231216985	-41.3378722095	0.0197623645591

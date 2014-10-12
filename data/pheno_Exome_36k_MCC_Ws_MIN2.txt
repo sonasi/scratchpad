@@ -1,0 +1,1 @@
+../../DBMI/data/pheno_Exome_36k_MCC_Ws_MIN2.txt

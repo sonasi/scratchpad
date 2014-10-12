@@ -1,0 +1,1 @@
+SNP_name	Phenotype	Chr	Disease_Trait	Sample Size	p-val_rep	OR_rep	MAF_rep	Gene_rep	OR_common	p-val_common	MAF_common	OR_combined	p-val_combined	OR_remainder	p-val_remainder	SNPS_rare	MAFs_rare_snps	p-vals_rare_snps	ORs_rare_snps	A_common	A_cmb	A_rem
