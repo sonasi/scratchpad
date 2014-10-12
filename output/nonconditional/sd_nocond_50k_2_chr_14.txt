@@ -1,2 +1,0 @@
-snp_name	pheno	Chr	Trait	Sample Size	pval_rep	OR_rep	Gene_rep	maf_common	cmb_odds_ratio	cmn_p_val	rare_snps	rare_snps_mafs	rare_snps_pvals	rare_snps_ors	A_cmb
-rs8017161	pheno_571.6	14	Primary biliary cirrhosis	2,774 European ancestry cases, 9,814 European ancestry controls	3E-13	1.22	TNFAIP2	0.4	2.75295522388	0.00943831185737	exm1129650	0.00557922499493	2.75295522388	0.0166987738831	[[22932, 248, 1], [231, 7, 0]]

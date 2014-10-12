@@ -1,2 +1,0 @@
-snp_name	pheno	Disease_Trait	pval_rep	OR_rep	MAF_rep	Gene_rep	common_or	common-p_val	maf_common	cmb_odds_ratio	cmn_p_val	remainder_or	remainder_pval	rare_snps	rare_snps_mafs	rare_snps_pvals	rare_snps_ors	A_common	A_cmb	A_rem
-rs635634	pheno_272.11	Cholesterol, total	9E-21	2.30	0.21	ABO	1.05109494088	0.0615243533909	0.000168236877524	4.86802827965	0.0390663513857	1.04948727834	0.0675601799069	exm792698	0.000168236877524	4.86802827965	0.0390663513857	[[12480, 5503, 612], [2504, 1196, 122]]	[[18591, 3], [3819, 3]]	[[12481, 5502, 612], [2506, 1194, 122]]

@@ -1,2 +1,0 @@
-snp_name	pheno	Study	pval_rep	OR_rep	Gene_rep	common_or	common-p_val	maf_common	cmb_odds_ratio	cmn_p_val	cmb_maf	remainder_or	remainder_pval	A_common	A_cmb	A_rem
-rs613872	pheno_364.51	E2-2 protein and Fuchs's corneal dystrophy.	1E-18	5.47	TCF4	3.10169567158	1.40376922072e-08	0.0257738896366	3.18890727681	0.00170405833826	[28211, 1486, 23, 2]	2.80882680125	7.09353036445e-07	[[18493, 7247, 734], [21, 30, 7]]	[[25138, 1323, 19], [50, 7, 1]]	[[19622, 6137, 715], [27, 25, 6]]

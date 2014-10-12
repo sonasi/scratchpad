@@ -1,2 +1,0 @@
-snp_name	pheno	Disease_Trait	pval_rep	OR_rep	MAF_rep	Gene_rep	common_or	common-p_val	maf_common	cmb_odds_ratio	cmn_p_val	remainder_or	remainder_pval	rare_snps	rare_snps_mafs	rare_snps_pvals	rare_snps_ors	A_common	A_cmb	A_rem
-rs8042374	pheno_165.1	Lung cancer	8E-12	NR	NR	NR	0.796738790001	3.55173759414e-06	0.015163755091	0.700434920972	0.0292438866833	0.807016002814	1.34013473547e-05	exm2272318	0.015163755091	0.700434920972	0.0292438866833	[[16520, 9953, 1478], [817, 385, 49]]	[[27091, 843, 7], [1225, 25, 1]]	[[16896, 9581, 1474], [827, 375, 49]]

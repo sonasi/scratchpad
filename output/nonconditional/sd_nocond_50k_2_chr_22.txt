@@ -1,3 +1,0 @@
-snp_name	pheno	Chr	Trait	Sample Size	pval_rep	OR_rep	Gene_rep	maf_common	cmb_odds_ratio	cmn_p_val	rare_snps	rare_snps_mafs	rare_snps_pvals	rare_snps_ors	A_cmb
-rs2284063	pheno_172.11	22	Melanoma	1,539 European ancestry cases, 3,917 European ancestry controls	2E-9	1.20	Intergenic	0.37	5.811352657	0.00353355464566	exm1608106	0.00038695783842	5.811352657	0.00830315647119	[[24059, 16], [1035, 4]]
-rs229541	pheno_250.1	22	Type 1 diabetes	3,561 cases,4,646 controls	2E-8	1.11	C1QTNF6	0.43	2.57071036376	0.0175986022844	exm1605772	0.000980160205496	2.57071036376	0.0286582383318	[[21403, 40], [1457, 7]]

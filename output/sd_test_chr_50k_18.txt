@@ -1,2 +1,0 @@
-snp_name	pheno	Disease_Trait	pval_rep	OR_rep	MAF_rep	Gene_rep	common_or	common-p_val	maf_common	cmb_odds_ratio	cmn_p_val	remainder_or	remainder_pval	rare_snps	rare_snps_mafs	rare_snps_pvals	rare_snps_ors	A_common	A_cmb	A_rem
-rs613872	pheno_364.51	Fuchs's corneal dystrophy	1E-18	5.47	0.15	TCF4	3.10169567158	1.40376969653e-08	0.0257738896366	3.18890727681	0.00170406461696	2.80882680125	7.09353300751e-07	exm-rs17512836	0.0257738896366	3.18890727681	0.00170406461696	[[18493, 7247, 734], [21, 30, 7]]	[[25138, 1323, 19], [50, 7, 1]]	[[19622, 6137, 715], [27, 25, 6]]

@@ -1,1 +1,0 @@
-SNP_name	Phenotype	Chr	Disease_Trait	Sample Size	p-val_rep	OR_rep	MAF_rep	Gene_rep	OR_combined	p-val_combined	MAF_combined	P_12_max	SKAT_p-val	Logit_no-covariates	Logit	SNPS_rare	MAFs_rare_snps	p-vals_rare_snps	ORs_rare_snps	A_cmb

@@ -1,1 +1,0 @@
-snp_name	pheno	Study	pval_rep	OR_rep	Gene_rep	common_or	common-p_val	maf_common	cmb_odds_ratio	cmn_p_val	cmb_maf	remainder_or	remainder_pval	A_common	A_cmb	A_rem
