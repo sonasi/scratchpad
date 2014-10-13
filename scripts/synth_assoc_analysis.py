@@ -35,7 +35,8 @@ query = "select * from (select catalog_UP_brief.Chr, catalog_UP_brief.SNP, catal
 CHR = 16
 d_bp = 25000
 
-data_dir = '/home/vagrant/work/DBMI/data/'
+import utils
+data_dir = utils.data_dir
 
 # df_genemap = pd.read_csv('Homo_sapiens.GRCh37.73.gtf.gz', compression='gzip', sep='\t', names=['id', 'processed_transcript', 'exon', 'start', 'end', 'other', 'strand', 'other2', 'gene_id', 'transcript_id', 'exon_number', 'gene_name', 'gene_biotype', 'pseudogene'], index_col=False)
 # df_genes = df_genemap[df_genemap['gene_biotype']=='protein_coding'].groupby('gene_name')
@@ -926,7 +927,7 @@ def runloop_nocond(df_catalog_full, snps, chr, method='gene'):
 def main():
 # 	for chr in range(16, 23):
 #   	df_catalog = pd.io.parsers.read_csv("PheWAS_translate_echo.csv", dtype=str)
- 	df_catalog_full = pd.io.parsers.read_csv("../PheWAS_translate_full.csv", dtype=str)
+ 	df_catalog_full = pd.io.parsers.read_csv("../data/PheWAS_translate_full.csv", dtype=str)
 
 # 	df_catalog_lab = pd.io.parsers.read_csv('PheWAS_translate_noncond_continuous.csv', dtype=str)
 # 	df_catalog_lab = df_catalog_lab.drop_duplicates(['SNP', 'Disease_Trait', 'OR_or_beta'])
