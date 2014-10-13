@@ -25,8 +25,10 @@ import scipy.stats as stats
 from operator import itemgetter
 
 
+data_dir = '/home/vagrant/work/DBMI/data/'
+
 # Initialize plink library and read phenotype file
-infile = "/home/vagrant/work/DBMI/data/2_Exome_36K_Ws" 
+infile = "{}/2_Exome_36K_Ws".format(data_dir)
 plink_file = plinkfile.open( infile )
 
 if not plink_file.one_locus_per_row( ):
