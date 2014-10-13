@@ -24,8 +24,8 @@ import math
 import scipy.stats as stats
 from operator import itemgetter
 
-
-data_dir = '/home/vagrant/work/DBMI/data/'
+import utils
+data_dir = utils.data_dir
 
 # Initialize plink library and read phenotype file
 infile = "{}/2_Exome_36K_Ws".format(data_dir)
