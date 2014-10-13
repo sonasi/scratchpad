@@ -28,13 +28,14 @@ from string import find
 
 rpy2.robjects.numpy2ri.activate()
 
-
 non_decimal = re.compile(r'[^\d.]+')
 
 query = "select * from (select catalog_UP_brief.Chr, catalog_UP_brief.SNP, catalog_traits.jd_code, Trait, Reported_Gene, Mapped_gene, p_value, OR_or_beta_text, CI_95, Intergenic from catalog_UP_brief join catalog_traits on catalog_traits.trait = catalog_UP_brief.Disease_trait) as t1 join GWAxPheWAS.Exome_36k_Ws_GAE3_view on GWAxPheWAS.Exome_36k_Ws_GAE3_view.SNP = t1.SNP and GWAxPheWAS.Exome_36k_Ws_GAE3_view.jd_code = t1.jd_code"
-CHR = 16
 
+CHR = 16
 d_bp = 25000
+
+data_dir = '/home/vagrant/work/DBMI/data/'
 
 # df_genemap = pd.read_csv('Homo_sapiens.GRCh37.73.gtf.gz', compression='gzip', sep='\t', names=['id', 'processed_transcript', 'exon', 'start', 'end', 'other', 'strand', 'other2', 'gene_id', 'transcript_id', 'exon_number', 'gene_name', 'gene_biotype', 'pseudogene'], index_col=False)
 # df_genes = df_genemap[df_genemap['gene_biotype']=='protein_coding'].groupby('gene_name')
@@ -50,7 +51,7 @@ d_bp = 25000
 def load():
 	global df_genes
 	global df_demos
-	df_genemap = pd.read_pickle('df_genemap.pkl')
+	df_genemap = pd.read_pickle('../data/df_genemap.pkl')
 	df_genes = df_genemap[df_genemap['gene_biotype']=='protein_coding'].groupby(['gene_name', 'seqname'])
 	df_demos = pd.read_csv("../data/demos_Ws_view.tsv", '\t')
 
@@ -121,7 +122,7 @@ def run_continuous(df, snps, snps_cmn, chr, method='gene'):
 		print '\n Starting scan pair', k, '/', len(df), '--', lab_name, snp_name
 
 		try:		
-			df_labs = pd.io.parsers.read_csv("/home/vagrant/data/labwas/data/pheno_Ws_no_lab_count_req/pheno_{}_Exome_demos_Ws_Age18.txt".format(lab_name), sep='\t', names=['FID', 'IID', 'Mean', 'Median', 'Min', 'Max', 'Ever_high', 'Ever_low', 'First'])	
+			df_labs = pd.io.parsers.read_csv("../data/pheno_Ws_no_lab_count_req/pheno_{}_Exome_demos_Ws_Age18.txt".format(lab_name), sep='\t', names=['FID', 'IID', 'Mean', 'Median', 'Min', 'Max', 'Ever_high', 'Ever_low', 'First'])	
 		except:
 			print 'The data for the lab,', lab_name, ', doesn\'t seem to exist.'
 			continue
@@ -275,7 +276,7 @@ def getdata2(chr, df_catalog):
 	snps_cmn = dict()
 	snp_list_cmn = ['exm-'+str(x) for x in df_catalog.SNP.tolist()]
 
-	infile = "/home/vagrant/work/DBMI/data/2_Exome_36K_Ws_chr{}".format(chr) 
+	infile ="{}/2_Exome_36K_Ws_chr{}".format(data_dir, chr) 
 	plink_file = plinkfile.open( infile )
 	locus_list = plink_file.get_loci( )
 	total = 0
@@ -298,7 +299,7 @@ def getdata(chr):
 
 	total = 0
 	sel = 1
-	infile = "/home/vagrant/work/DBMI/data/2_Exome_36K_Ws_chr{}".format(chr) 
+	infile = "{}/2_Exome_36K_Ws_chr{}".format(data_dir, chr) 
 
 	print infile
 	plink_file = plinkfile.open( infile )
@@ -334,7 +335,7 @@ def loop_pairs(df_catalog):
 def dopair_lab( gene, chr, lab_name, snps, snp_cmn=False ):
 
 	try:	
-		df_labs = pd.io.parsers.read_csv("/home/vagrant/data/labwas/data/pheno_Ws_no_lab_count_req/pheno_{}_Exome_demos_Ws_Age18.txt".format(lab_name), sep='\t', names=['FID', 'IID', 'Mean', 'Median', 'Min', 'Max', 'Ever_high', 'Ever_low', 'First'], skiprows=1)
+		df_labs = pd.io.parsers.read_csv("../data/labwas/data/pheno_Ws_no_lab_count_req/pheno_{}_Exome_demos_Ws_Age18.txt".format(lab_name), sep='\t', names=['FID', 'IID', 'Mean', 'Median', 'Min', 'Max', 'Ever_high', 'Ever_low', 'First'], skiprows=1)
 		df_labs['FID'] = df_labs['FID'].astype(int)
 	except:
 		print 'The data for the lab,', lab_name, ', doesn\'t seem to exist.'
@@ -925,7 +926,7 @@ def runloop_nocond(df_catalog_full, snps, chr, method='gene'):
 def main():
 # 	for chr in range(16, 23):
 #   	df_catalog = pd.io.parsers.read_csv("PheWAS_translate_echo.csv", dtype=str)
- 	df_catalog_full = pd.io.parsers.read_csv("PheWAS_translate_full.csv", dtype=str)
+ 	df_catalog_full = pd.io.parsers.read_csv("../PheWAS_translate_full.csv", dtype=str)
 
 # 	df_catalog_lab = pd.io.parsers.read_csv('PheWAS_translate_noncond_continuous.csv', dtype=str)
 # 	df_catalog_lab = df_catalog_lab.drop_duplicates(['SNP', 'Disease_Trait', 'OR_or_beta'])
