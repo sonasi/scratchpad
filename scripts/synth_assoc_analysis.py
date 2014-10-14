@@ -715,6 +715,8 @@ def runloop(df_catalog, snps, chr, method='gene'):
 			except:
 				'Gene', gene, 'not found.'
 			
+			print len(snps_selected), 'SNPs found'
+			
 			snps_selected = list(set(snps_selected))
 
 			for name in snps_selected:				
