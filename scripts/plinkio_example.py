@@ -71,16 +71,31 @@ def mutual_information(df_snp_1, df_snp_2 ):
 	total = len( set(df_snp_1.FID.tolist())  )
 	
 	MI_sum = 0
-	Entropy_sum = 0
+	Entropy_sum_1 = 0
+	Entropy_sum_2 = 0
+	
+	# Compute Entropy 
+
+	for allele in allele_types:	
+		p_1 = float( len( set(df_snp_1[df_snp_1['SNP']==allele].FID.tolist()) ) ) \
+			  / total
+
+		if not(p_1 == 0):			
+			Entropy_sum_1 += -1 * p_1 * math.log( p_1, 2)
+
+		p_2 = float( len( set(df_snp_2[df_snp_2['SNP']==allele].FID.tolist()) ) ) \
+			  / total
+
+		if not(p_2 == 0):			
+			Entropy_sum_2 += -1 * p_2 * math.log( p_2, 2)
+
 	
 	for allele1 in allele_types:	
 
 		p_1 = float( len( set(df_snp_1[df_snp_1['SNP']==allele1].FID.tolist()) ) ) \
 			  / total
 		
-		Entropy_sum += -1 * p_1 * math.log( p_1, 2)
-
-		for allele1 in allele_types:	
+		for allele2 in allele_types:	
 
 			p_j = float( len( set(df_snp_1[df_snp_1['SNP']==allele1].FID.tolist() ) \
 					  &  set( df_snp_2[df_snp_2['SNP']==allele2].FID.tolist())))  \
@@ -89,10 +104,12 @@ def mutual_information(df_snp_1, df_snp_2 ):
 
 			p_2 = float( len( set(df_snp_2[df_snp_2['SNP']==allele2].FID.tolist() ) ) ) \
 				  / total	
-			
-			MI_sum += p_j * math.log( p_j / (p_1*p_2), 2 )
+# 			print allele1, allele2, p_1, p_2, p_j
+
+			if not(p_j == 0):			
+				MI_sum += p_j * math.log( p_j / (p_1*p_2), 2 )
 	
-	return (MI_sum, Entropy_sum)
+	return (MI_sum, Entropy_sum_1, Entropy_sum_2)
 
 
 
@@ -107,8 +124,12 @@ def combine_snps(args):
 	df_cat = pandas.concat( args, axis=1 )
 	combined = []
 
+# 	df_logit['pheno'] = df_logit[df_logit.columns[2]].map({2: 1, 1: 0, -9:-9})
+
 	for row in df_cat['SNP'].iterrows():
-		combined.append( np.max(row[1]) )
+		elements = row[1]
+		elements = [ 0 if x==3 else x for x in elements ]
+		combined.append( np.max(elements) )
 
 	df_comb = pandas.DataFrame( zip(df_ref.FID, combined), index=df_ref.index, columns = ['FID', 'SNP'] ) 
 	return df_comb

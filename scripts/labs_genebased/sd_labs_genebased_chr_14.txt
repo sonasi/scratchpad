@@ -1,1 +1,0 @@
-SNP	Reported_Gene	Chr	Lab_name	Study	Trait	p-value_reported (Catalog)	beta_reported (Catalog)	MAF_reported (catalog)	beta_common (Exome)	p-value_common (Exome)	MAF_common (exome)	beta_combined	p-value_combined	MAF_combined	SNPs_name	SNPs_MAF	SNPS_beta	SNPS_p-val
